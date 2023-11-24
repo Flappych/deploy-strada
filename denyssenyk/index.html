@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TODO List</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="todo">
+    <div class="high-priority">
+        <h2>HIGH</h2>
+        <form class="input-field" id="high-priority-user-input">
+            <input class="input-high" type="text" placeholder="add important task" id="high-task-input" name="task">
+            <button type="submit" class="cross-add">+</button>
+        </form>
+        <!--TASKS-->
+        <ul class="task-list" id="high-priority-tasks">
+            <!--          <li class="container-task">-->
+            <!--            <input type="checkbox" />-->
+            <!--            <span class="task-name">test</span>-->
+            <!--            <button type="submit" class="cross-remove">+</button>-->
+            <!--          </li>-->
+        </ul>
+    </div>
+
+
+    <div class="low-priority">
+        <h2>LOW</h2>
+        <form class="input-field" id="low-priority-user-input">
+            <input class="input-low" type="text" placeholder="add task" id="low-task-input" name="task"
+            />
+            <button type="submit" class="cross-add">+</button>
+        </form>
+        <!--TASKS-->
+        <ul class="task-list" id="low-priority-tasks">
+
+            <!--          <li class="container-task">-->
+            <!--            <input type="checkbox" />-->
+            <!--            <span class="task-name">test</span>-->
+            <!--            <button type="submit" class="cross-remove">+</button>-->
+            <!--          </li>-->
+        </ul>
+    </div>
+</div>
+
+<script type="module" src="main.js"></script>
+<script type="module" src="modules/todoLogic.js"></script>
+<script type="module" src="modules/renderToDo.js"></script>
+<script type="module" src="modules/getElements.js"></script>
+</body>
+</html>
